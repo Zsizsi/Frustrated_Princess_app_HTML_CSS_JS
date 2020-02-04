@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/iq_test.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Sedgwick+Ave" rel="stylesheet">
+    <title>I love frustrated girls so much app</title>
+</head>
+
+<body>
+    <div id="site-container">
+        <div id="logo-pr">   
+            <img id="logo-pic" src="../pictures/logo.png" alt="Princesses">
+        </div>
+        <div class="iq">   
+            <img id="princesses" src="../IQ_test_pictures/iq_test_backgr.jpg" alt="Princess IQ question 1">
+        </div>
+        <div class="iq">   
+            <img class="pics" src="../IQ_test_pictures/princess1.jpg" alt="Princess IQ question 1">
+        </div>
+        <div class="iq">
+             <img class="pics" src="../IQ_test_pictures/princess2.jpg" alt="Princess IQ question 2">
+        </div>
+        <div class="iq">
+             <img class="pics" src="../IQ_test_pictures/princess3.jpg" alt="Princess IQ question 3">
+        </div>
+        <div class="iq">
+             <img class="pics" src="../IQ_test_pictures/princess4.jpg" alt="Princess IQ question 4">
+        </div> 
+        <div class="iq">
+             <img class="pics" src="../IQ_test_pictures/princess5.jpg" alt="Princess IQ question 5">
+        </div>
+        <div class="iq">
+             <img class="pics" src="../IQ_test_pictures/princess6.jpg" alt="Princess IQ question 6">
+        </div>
+        <div id="result"></div>
+        <div id="result-btn">
+            <button onclick="open_picture()">Give me the result</button>
+        </div>
+        <script>
+            function open_picture() {
+                let picture = window.open("", "MsgWindow", "width=400,height=300,top=200,left=500");
+                picture.document.write("<img src=\"../IQ_test_pictures/iq_test_result.jpg\">");
+            }
+        </script>
+    </div>
+</body>
+</html>
