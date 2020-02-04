@@ -1,0 +1,117 @@
+body {
+    background-color: #ffe6ff;
+}
+
+.iq, #result-btn {
+    text-align: center;
+	margin: 20px;
+}
+
+button {
+    -moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+	-webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+	background:-moz-linear-gradient(top, #ff5bb0 5%, #f24437 100%);
+	background:-webkit-linear-gradient(top, #ff5bb0 5%, #f24437 100%);
+	background:-o-linear-gradient(top, #ff5bb0 5%, #f24437 100%);
+	background:-ms-linear-gradient(top, #ff5bb0 5%, #f24437 100%);
+	background:linear-gradient(to bottom, #ff5bb0 5%, #f24437 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
+	background-color:#ff5bb0;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:1px solid #ff5bb0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+
+button:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+	background:-moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f',GradientType=0);
+	background-color:#f24437;
+}
+
+#princesses {
+	width: 80%;
+	height: auto;
+	animation-name: princess;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+#logo-pr {
+	text-align: center;
+	margin: 20px;
+	animation-name: logo;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+.pics, #logo-pic {
+	width: 40%;
+    height: auto;
+}
+
+.pics {
+	animation-name: pictures;
+    animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes princess {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes logo {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    70% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pictures {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    70% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

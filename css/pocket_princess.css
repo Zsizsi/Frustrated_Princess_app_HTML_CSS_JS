@@ -1,0 +1,148 @@
+
+body {
+	background-image: url("../pocket_pr_pictures/heart4.jpg");
+	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+#container {
+	margin: 100px;
+	text-align: center;
+	background-color: black;
+	border-radius: 350px;
+	-webkit-box-shadow: 2px 11px 300px 17px rgba(156,53,204,1);
+	-moz-box-shadow: 2px 11px 300px 17px rgba(156,53,204,1);
+	box-shadow: 2px 11px 300px 17px rgba(156,53,204,1);
+}
+
+#pr-pic {
+	width: 80%;
+	height: auto;
+}
+
+#logo {
+	width: 50%;
+	height: auto
+}
+
+#gallery {
+	animation-name: gallery_;
+    animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+
+
+#title {
+	animation-name: title_;
+    animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+
+
+/*------buttons------------------*/
+#btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	animation-name: btn_;
+    animation-duration: 3s;
+	animation-timing-function: ease-in-out;
+}
+
+button {
+	width: auto;
+	height: auto;
+	text-align: center;
+    border: none;
+    outline: none;
+	color: black;
+	background-color: #f5f4f2;
+	background-image: linear-gradient(315deg, #f5f4f2 0%, #ff4081 74%);
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+	border-radius: 10px;
+	width: 70px;
+	height: 40px;
+}
+/*animation -------------------------*/
+@keyframes title_ {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    70% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes gallery_ {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    70% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes btn_ {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    70% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+/* -------------------------------------------------------*/
+
+@media screen and (max-width: 1200px), (min-width: 768px) {
+  
+	#pr-pic {
+		width: 80%;
+		height: auto;
+	}
+	#logo {
+		width: 50%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 767px), (min-width: 320px) {
+	
+	#pr-pic {
+		width: 60%;
+		height: auto;
+	}
+	#logo {
+		width: 30%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 320px), (min-width: 200px) {
+	
+	#pr-pic {
+		width: 30%;
+		height: auto;
+	}
+	#logo {
+		width: 30%;
+		height: auto;
+	}
+}
+

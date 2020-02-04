@@ -1,0 +1,181 @@
+/* font-family: 'Courgette', cursive;
+font-family: 'Kalam', cursive;
+*/
+
+.container {
+	background-color: #ffe6ff;
+	text-align: center;  
+}
+body {
+	background-color: #ffe6ff;
+}
+
+#title {
+ 	animation-name: logo_;
+ 	animation-timing-function: ease-in-out;
+ 	animation-duration: 3s;
+}
+#logo {
+	height: auto;
+	width: 60%;
+}
+
+#btn {
+	animation-name: btn_;
+ 	animation-timing-function: ease-in-out;
+ 	animation-duration: 3s;
+}
+
+#title, #pic {
+	height: auto;
+	max-width: 100%;
+	text-align: center;
+}
+#content {
+	background-image: url("../pictures/princess_jointed.jpg");
+	height: 33.5rem;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+#reason_text {
+    font-family: 'Tangerine', cursive;
+    font-size: 25px;
+    text-align: center;
+    /*color: #413291; */
+    font-weight: bold; 
+    color: #c9205c
+}
+
+#underline {
+    font-family: 'Kalam', cursive;
+    font-size: 27px;
+    text-align: center;
+    color: #413291; 
+	font-weight: bold; 
+	text-decoration: underline;
+}
+ #texts {
+	 background-color: #ffe6ff;
+	 border-radius: 40px;
+	 padding: 20px;
+	 border: solid black 3px;
+	 animation-name: texts_;
+ 	 animation-timing-function: ease-in-out;
+ 	 animation-duration: 3s;
+
+ }
+
+/*---------------button-----------------------*/
+
+
+button {
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    -moz-box-shadow: 3px 4px 0px 0px #8a2a21;
+	-webkit-box-shadow: 3px 4px 0px 0px #8a2a21;
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24437));
+	background:-moz-linear-gradient(top, #ff5bb0 5%, #f24437 100%);
+	background:-webkit-linear-gradient(top, #ff5bb0 5%, #f24437 100%);
+	background:-o-linear-gradient(top, #ff5bb0 5%, #f24437 100%);
+	background:-ms-linear-gradient(top, #ff5bb0 5%, #f24437 100%);
+	background:linear-gradient(to bottom, #ff5bb0 5%, #f24437 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24437',GradientType=0);
+	background-color:#ff5bb0;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+	border-radius:18px;
+	border:1px solid #ff5bb0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:13px;
+    padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+
+button:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f24437), color-stop(1, #c62d1f));
+	background:-moz-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-webkit-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-o-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:-ms-linear-gradient(top, #f24437 5%, #c62d1f 100%);
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24437', endColorstr='#c62d1f',GradientType=0);
+	background-color:#f24437;
+}
+
+/*--animation-------------------*/
+
+@keyframes logo_ {
+    0% {
+        opacity: 0;
+		transform: translateX(300px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes texts_ {
+    0% {
+		opacity: 0;
+		transform: translate3d(300px,300px,0);
+    }
+    80% {
+		transform: translate3d(-10px,-10px,0);
+    }
+    100% {
+		transform: translate3d(0,0,0);
+	}
+}
+
+@keyframes btn_ {
+    0% {
+		opacity: 0;
+		transform: translateY(-300px);
+    }
+    80% {
+		transform: translateY(10px);
+    }
+    100% {
+		transform: translateY(0);
+	}
+}
+/*----------------------------------------------*/
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {  
+    #underline, #reason_text {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+    #underline, #reason_text {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    #underline, #reason_text {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px) { 
+    #underline, #reason_text {
+        font-size: 18px;
+    }
+}
